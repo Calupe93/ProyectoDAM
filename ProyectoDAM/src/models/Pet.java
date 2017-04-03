@@ -26,7 +26,7 @@ public class Pet {
 	private List<Disease> diseases;
 	private boolean sterilized;
 	private boolean chip;
-	private boolean is_sent;
+	private boolean sendable;
 	public Pet() {
 		super();
 		this.id = ++this.next_id;
@@ -127,11 +127,11 @@ public class Pet {
 	public void setChip(boolean chip) {
 		this.chip = chip;
 	}
-	public boolean isIs_sent() {
-		return is_sent;
+	public boolean isSendable() {
+		return sendable;
 	}
-	public void setIs_sent(boolean is_sent) {
-		this.is_sent = is_sent;
+	public void setSendable(boolean is_sent) {
+		this.sendable = is_sent;
 	}
 	public int getId() {
 		return id;
